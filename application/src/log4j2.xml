@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true" monitorInterval="60" status="DEBUG">
+	
+	<!-- Définition de propriétés pour réutilisation -->
+	<Properties>
+		<Property name="filename">rekest.log</Property> 
+	</Properties>
+	
+	<!-- Définition des 'Appenders', destination et format des messages -->
+    <Appenders>
+        <Appender type="Console" name="sysout" >
+            <PatternLayout pattern="%d{DATE} [%t] %-5level {%logger} - %msg %n" />
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY" />
+        </Appender>
+        
+        <Appender type="File" name="file" filename="${filename}" >
+            <PatternLayout pattern="%d{DATE} [%t] %-5level {%logger} - %msg %n" />
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+        </Appender>
+    </Appenders>
+
+    <!-- Définition des 'loggers', identification des classes java et de leur
+    	niveau de journalisation -->
+    <Loggers>		
+		<!-- Il faut au moins un logger 'racine' -->
+        <Logger name="com.agrosoft.address.util.HibernateSession" level="debug" additivity="false">
+            <AppenderRef ref="sysout"/>
+        </Logger>
+        
+        <Root level="info">
+            <AppenderRef ref="sysout" />
+            <AppenderRef ref="file" />
+        </Root>
+    </Loggers>
+</Configuration>

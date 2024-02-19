@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" stylesheets="@../assets/css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rekest.controllers.impl.AdminOverviewController">
+   <children>
+      <VBox layoutX="238.0" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" styleClass="parent" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="900.0" style="-fx-border-color: #D8DBDE; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="TOP_LEFT" text="Dashboard">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="900.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #3686F0;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="CLONE" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Demandes">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countDemandes" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #EB474D;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Departements">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countDepartements" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #F08E35;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Employés">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countEmployes" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="145.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="900.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #B36DCA;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="LIST" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Produits">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countProduits" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #53B9AE;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TAG" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Rôles">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countRoles" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="121.0" style="-fx-background-color: #FFD966;">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BARS" size="60" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label text="Services">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="countServices" text="Count">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

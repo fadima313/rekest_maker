@@ -1,0 +1,182 @@
+.parent{
+	-fx-background-color: #f1f3f7;
+} 
+
+.search{
+	-fx-text-fill: white;
+}
+
+.sidebar{
+	-fx-background-color: #040720;
+} 
+
+.topbar {
+	-fx-background-color: white;
+	-fx-border-color: #040720;
+	-fx-border-width: 5px 0px 0px 0px;
+}
+
+.rightSide{
+	-fx-background-color: #272924;
+}
+
+.profil {
+	-fx-border-color: #D8DBDE;
+	-fx-border-width: 0px 0px 1px 0px;
+}
+
+.rounded {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.btns{
+	-fx-background-color: transparent;
+} 
+
+.btns:hover{
+	-fx-background-color: #202332;
+	-fx-border-width : 0px 0px 0px 5px;
+	-fx-border-color: #F30000;
+} 
+
+.box {
+	-fx-border-color: #D8DBDE;
+	-fx-border-width: 1px 0px 0px 0px;
+}
+
+.textfield {
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 1px 0px;
+	-fx-border-color: black;
+}
+
+.rcorners {
+  -fx-border-radius: 25px;
+  -fx-border-color: 2px solid #73AD21;
+}
+
+.authcolor{
+	-fx-background-color: white;
+}
+
+.btnauth {	
+	-fx-font-weigth: bold;
+	-fx-background-color: white;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-text-fill: #86C7ED;
+	-fx-border-color: #86C7ED;
+	-fx-border-radius: 20;
+	-fx-border-width: 3;
+}
+
+.btnauth:hover {
+	-fx-font-weigth: bold;
+	-fx-background-color: #86C7ED;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-text-fill: white;
+}
+
+.selected {
+	-fx-background-color: #F4F4F4;
+	-fx-border-width : 0px 0px 0px 5px;
+	-fx-border-color: #F30000;
+}
+
+.defaultbtns {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 22;
+    -fx-background-color:  #040720;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.defaultbtns:hover {
+    -fx-background-color: #A066CB;
+}
+
+.defaultbtns:pressed, .defaultbtns:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #81ac49;
+}
+
+.defaultbtns:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.defaultbtns:disabled, .defaultbtns:default:disabled {
+    -fx-opacity: 0.4 ;
+    -fx-background-color: #81ac49;
+    -fx-text-fill: white;
+}
+
+.defaultbtns:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.defaultbtns:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:    #040720;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+ 
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}

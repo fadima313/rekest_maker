@@ -1,0 +1,15 @@
+package com.rekest.enums;
+
+public enum EtatDemande {
+ CREATE,
+ SUBMITED,
+ REJECTED_N1,
+ REJECTED_N2,
+ REJECTED_N3,
+ REJECTED_N4,
+ APPROVED_N1,
+ APPROVED_N2,
+ APPROVED_N3,
+ CLOSED,
+ PROCESSED
+}
